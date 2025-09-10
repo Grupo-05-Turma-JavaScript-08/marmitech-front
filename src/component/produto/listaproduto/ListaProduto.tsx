@@ -5,55 +5,59 @@ import CardProduto from "../cardproduto/CardProduto";
 const produtos: Produto[] = [
   {
     id: 1,
-    nome: "Marmita Fitness",
-    descricao: "Frango grelhado com arroz integral e salada.",
-    categoria: "Marmitas",
-    preco: 15.9,
-    image:
-      "https://loja.gardenshopping.com.br//media/produtos/8b872c850b05ee305736537ad094b924.jpg",
+    nome: 'Marmita Fitness Frango',
+    descricao: 'Frango grelhado + arroz integral + brócolis no vapor + batata-doce assada',
+    categoria: 'Fitness',
+    preco: 22.90,
+    image: 'https://i.ibb.co/67H35bXz/Frango-grelhado-arroz-integral-br-colis-no-vapor-batata-doce-assada.webp'
   },
   {
-    id: 1,
-    nome: "Marmita Fitness",
-    descricao: "Frango grelhado com arroz integral e salada.",
-    categoria: "Marmitas",
-    preco: 15.9,
-    image:
-      "https://loja.gardenshopping.com.br//media/produtos/8b872c850b05ee305736537ad094b924.jpg",
+    id: 2,
+    nome: 'Marmita Fitness Salmão',
+    descricao: 'Salmão grelhado + quinoa + espinafre refogado + abobrinha grelhada',
+    categoria: 'Fitness',
+    preco: 28.90,
+    image: 'https://i.ibb.co/YBR2Z0Sc/Salm-o-grelhado-quinoa-espinafre-refogado-abobrinha-grelhada.png'
   },
   {
-    id: 1,
-    nome: "Marmita Fitness",
-    descricao: "Frango grelhado com arroz integral e salada.",
-    categoria: "Marmitas",
-    preco: 15.9,
-    image:
-      "https://loja.gardenshopping.com.br//media/produtos/8b872c850b05ee305736537ad094b924.jpg",
+    id: 3,
+    nome: 'Marmita Massa Integral',
+    descricao: 'Penne integral ao molho de tomate rústico + almôndegas de frango + parmesão ralado',
+    categoria: 'Massa',
+    preco: 24.50,
+    image: 'https://i.ibb.co/hFT8YVhv/Penne-integral-ao-molho-de-tomate-r-stico-alm-ndegas-de-frango-parmes-o-ralado.jpg'
   },
   {
-    id: 1,
-    nome: "Marmita Fitness",
-    descricao: "Frango grelhado com arroz integral e salada.",
-    categoria: "Marmitas",
-    preco: 15.9,
-    image:
-      "https://loja.gardenshopping.com.br//media/produtos/8b872c850b05ee305736537ad094b924.jpg",
+    id: 4,
+    nome: 'Marmita Tradicional',
+    descricao: 'Bife acebolado + arroz branco + feijão carioca + farofa + couve refogada',
+    categoria: 'Tradicional',
+    preco: 19.90,
+    image: 'https://i.ibb.co/Myj7Tx6L/Bife-acebolado-arroz-branco-feijao-carioca-brocolis-448x298-1.jpg'
   },
   {
-    id: 1,
-    nome: "Marmita Fitness",
-    descricao: "Frango grelhado com arroz integral e salada.",
-    categoria: "Marmitas",
-    preco: 15.9,
-    image:
-      "https://loja.gardenshopping.com.br//media/produtos/8b872c850b05ee305736537ad094b924.jpg",
+    id: 5,
+    nome: 'Marmita Vegana Mezzaluna',
+    descricao: 'Mezzaluna vegana recheada com ricota de castanhas e espinafre  + molho de tomate artesanal',
+    categoria: 'Vegana',
+    preco: 26.90,
+    image: 'https://i.ibb.co/hRpPQPGC/Mezzaluna-vegana-recheada-com-ricota-de-castanhas-e-espinafre-molho-de-tomate-artesanal-salada-verde.png'
   },
+  {
+    id: 6,
+    nome: 'Marmita Vegana Curry',
+    descricao: 'Grão-de-bico ao curry + arroz integral + abóbora assada + mix de legumes (cenoura, vagem)',
+    categoria: 'Vegana',
+    preco: 23.90,
+    image: 'https://i.ibb.co/SwypXR1D/receita-curry-de-grao-de-bico-e-alho-poro-com-arroz-integral-de-coco-1665171669.jpg'
+  }
+,
 ];
 
 function ListaProduto() {
   return (
-    <div className="flex justify-center w-full my-4 bg-amber-900">
-      <div className="container flex flex-col mx-2">
+    <div className="flex justify-center w-full bg-[#FDC749]/10 rounded-4xl ">
+      <div className="container flex flex-col mx-2 bg-white/20 rounded-4xl p-6 shadow-md">
         <SeccaoTitulo
           titulo="NOSSOS PRATOS MAIS POPULARES"
           descricao="Descubra nossos pratos de maior sucesso, feitos com ingredientes frescos e muito carinho."

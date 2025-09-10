@@ -13,17 +13,16 @@ function CardProduto({ produto }: CardProdutoProps) {
   };
 
   return (
-    <div className="flex flex-col rounded-lg bg-amber-600 shadow-xl overflow-hidden relative">
+    <div className="flex flex-col rounded-lg bg-[#d53415]/60 shadow-xl overflow-hidden relative
+    hover:scale-105 hover:shadow-2xl transition-all duration-300">
       <div
-        className={`absolute top-0 left-0 p-2 rounded-br-lg cursor-pointer ${
-          eFavorito ? "bg-yellow-400" : "bg-gray-300"
-        }`}
+        className={`absolute top-0 left-0 p-2 rounded-br-lg cursor-pointer transition-all duration-300 ${eFavorito ? "bg-yellow-400" : "bg-gray-300"
+          }`}
         onClick={toggleFavorite}
       >
         <svg
-          className={`w-5 h-5 ${
-            eFavorito ? "text-yellow-700" : "text-gray-600"
-          }`}
+          className={`w-5 h-5 transition-all duration-300 ${eFavorito ? "text-yellow-700" : "text-gray-600"
+            }`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -37,14 +36,22 @@ function CardProduto({ produto }: CardProdutoProps) {
         alt={produto.nome}
       />
 
-      <div className="p-4 text-white">
-        <p className="text-xl font-bold">${produto.preco.toFixed(2)}</p>
+      <div className="p-4 text-white grid grid-rows-1 gap-3 ">
+        <div className="flex flex-col gap-2">
+          <p className="text-xl font-bold ">R${produto.preco.toFixed(2)}</p>
 
-        <p className="text-sm mt-1">{produto.nome}</p>
+          <p className="text-md mt-1 font-bold">{produto.nome}</p>
 
-        <button className="mt-4 w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 rounded-md">
-          Comprar agora
-        </button>
+          <p className="text-sm mt-1 font-semibold">{produto.descricao}</p>
+        </div>
+
+
+        <div className="flex position-relative">
+          <button className="mt-4 w-full bg-[#d53415] hover:bg-orange-800 text-white font-bold py-2 rounded-md transition-all duration-300 active:bg-orange-800/30 pt ">
+            Comprar agora
+          </button>
+        </div>
+
       </div>
     </div>
   );
